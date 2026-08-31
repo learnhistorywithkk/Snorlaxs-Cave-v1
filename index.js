@@ -2,12 +2,14 @@ import express from "express";
 import http from "node:http";
 import createBareServer from "@tomphttp/bare-server-node";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import * as dotenv from "dotenv";
+
 dotenv.config();
 
 const __dirname = process.cwd();
+const app = express();
 const server = http.createServer();
-const app = express(server);
 const bareServer = createBareServer("/bare/");
 
 app.use(express.json());
@@ -18,6 +20,7 @@ app.use(
 );
 
 app.use(express.static(path.join(__dirname, "static")));
+
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "static", "index.html"));
 });
@@ -78,9 +81,11 @@ server.on("upgrade", (req, socket, head) => {
 });
 
 server.on("listening", () => {
-  console.log(`Snorlax's Cave listening on port 8080 ${process.env.PORT}`);
+  const port = process.env.PORT || 8080;
+  console.log(`Snorlax's Cave listening on port ${port}`);
 });
 
 server.listen({
-  port: process.env.PORT,
+  port: process.env.PORT || 8080,
+  hostname: "0.0.0.0",
 });
