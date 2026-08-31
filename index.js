@@ -1,6 +1,6 @@
 import express from "express";
 import http from "node:http";
-import bare from "@tomphttp/bare-server-node";
+import { createBareServer } from "@tomphttp/bare-server-node";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import * as dotenv from "dotenv";
@@ -10,7 +10,7 @@ dotenv.config();
 const __dirname = process.cwd();
 const app = express();
 const server = http.createServer();
-const bareServer = bare.createBareServer("/bare/");
+const bareServer = createBareServer("/bare/");
 
 app.use(express.json());
 app.use(
