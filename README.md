@@ -1,7 +1,7 @@
 <div align="center">
   
-# Welcome to Snorlax's Cave!
-Snorlax's Cave is a UV built proxy and game site **(v1.0 Release)**
+# Welcome to here
+UV built proxy and game site **(v1.0 Release)**
 </div>
 
 ## We offer:
@@ -10,10 +10,6 @@ Snorlax's Cave is a UV built proxy and game site **(v1.0 Release)**
 - Free emulator
 - Many customizable features
 
-## Join our community!
-<a align="center" href="(https://discord.gg/snorlaxscave)">
-    <img src="https://invidget.switchblade.xyz/snorlaxscave?theme=dark"/>
-</a>
 
 ## Local Hosting
 
@@ -37,6 +33,3 @@ node index.js
 [![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/SPS-Services/Snorlaxs-Cave-v1&branch=main&name=Snorlaxs-Cave-v1)
 [![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://render.com/deploy?repo=https://github.com/SPS-Services/Snorlaxs-Cave-v1)
 [![Deploy with Vercel](https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg)](https://vercel.com/new/clone?repositoryurl=https://github.com/SPS-Services/Snorlaxs-Cave-v1)
-## Contributors:
-[![Contrib](https://contrib.rocks/image?repo=SPS-Services/Snorlaxs-Cave-v1#)](https://github.com/SPS-Services/Snorlaxs-Cave-v1/graphs/contributors)
-## **[SUPPORT US!](https://patreon.com/SnorlaxCave)**
